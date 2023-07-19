@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/lpstyle.css">
+    <title>Monitoring Dashboard | LandingPage</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="../html/index.html" class="logo">FYP</a>
+            <div class="nav-links">
+                <span class="item selected">Home</span>
+                <span id="scroll" class="item">Get Started</span>
+            </div>
+            <div class="nav-buttons" id="navMenu">
+                <button class="nav-btn" onclick="redirectToRegister()">REGISTER</button>
+                <script>
+                    function redirectToRegister() {
+                        window.location.href = "../html/register.html"
+                    }
+                </script>
+                <button class="nav-btn" onclick="redirectToLogin()">SIGN IN</button>
+                <script>
+                    function redirectToLogin() {
+                        window.location.href = "../html/login.html"
+                    }
+                </script>
+            </div>
+
+            <button class="toggler">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+        <!-- End of Navbar -->
+
+        <!-- Top Container -->
+        <div class="top-container">
+            <div class="info-box">
+                <p class="header">
+                    CO2 Monitoring with IoT System
+                </p>
+                <p class="info-text">
+                    CO2 Monitoring with IoT System is a cutting-edge solution that combines the power of Internet of Things (IoT) technology with advanced sensors to measure 
+                    and monitor carbon dioxide (CO2) levels in real-time. The system offers a comprehensive and user-friendly dashboard that presents the collected data in 
+                    intuitive visualizations, allowing you to understand trends, patterns, and potential risks associated with CO2 concentration. By implementing this IoT 
+                    solution, you gain the ability to make informed decisions, take proactive measures, and optimize environmental conditions to ensure the well-being of 
+                    occupants, improve air quality, and reduce the carbon footprint.
+                </p>
+                <!--
+                <div class="info-buttons">
+                    <button class="info-btn selected">Explore</button>
+                    <button class="info-btn nav-btn">Create</button>
+                </div>
+                -->
+            </div>
+            <div class="nft-box">
+                <img src="../images/nft.jpg" class="nft-pic">
+                <!--
+                <div class="nft-content">
+                    <div class="info">
+                        <img src="logo.png" class="info-img">
+                        <div>
+                            <p>
+                                Reza
+                            </p>
+                            <p>
+                                0.27 Eth
+                            </p>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <div class="icon-box">
+                            <i class='bx bx-heart'></i>
+                            258
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+        <!-- End of Top Container -->
+
+        <!-- Get Stearted -->
+        <div class="get-started">
+            <p class="header">Getting Started</p>
+            <p class="info-text">Resources Required for this Project</p>
+            <div class="items-box">
+                <div class="item-container">
+                    <div class="item">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <p>Arduino</p>
+                </div>
+                <div class="item-container">
+                    <div class="item">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <p>CO2 Sensors</p>
+                </div>
+                <div class="item-container">
+                    <div class="item">
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                    </div>
+                    <p>Temperature Sensors</p>
+                </div>
+                <div class="item-container">
+                    <div class="item">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <p>Website Dashboard</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Get Started -->
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-header">
+                Whether it's for research purposes, workplace safety, or environmental sustainability, CO2 Monitoring with IoT System empowers 
+                you with real-time data to drive effective CO2 management strategies and foster a healthier and more sustainable future.
+            </div>
+            <!--
+            <div class="footer-links">
+                <div class="link">
+                    <h5>Marketplace</h5>
+                    <p>Home</p>
+                    <p>Get Started</p>
+                    <p>Discover</p>
+                    <p>Learn More</p>
+                </div>
+                <div class="link">
+                    <h5>Company</h5>
+                    <p>About Us</p>
+                    <p>Services</p>
+                    <p>Team Info</p>
+                </div>
+                <div class="link">
+                    <h5>Contact</h5>
+                    <p>Github</p>
+                    <p>Instagram</p>
+                    <p>Twitter</p>
+                    <p>Facebook</p>
+                </div>
+
+            </div>
+            -->
+
+        </div>
+        <!-- End of Footer -->
+        <!-- <div class="copyright">
+            <p>Copyright 2023, AsmrProg Youtube Channel.</p>
+        </div> -->
+
+    </div>
+
+
+    <script src="../js/lpindex.js"></script>
+</body>
+
+</html>

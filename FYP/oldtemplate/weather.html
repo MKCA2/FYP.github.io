@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Dashboard</h1>
+  <div id="weather-info"></div>
+
+  <script>
+    $(document).ready(function() {
+      // Replace 'YOUR_API_KEY' with your actual API key
+      var apiKey = '1a269b0068fef842c965837d15b36069';
+      var weatherEndpoint = 'https://api.openweathermap.org/data/2.5/weather?q=Singapore&appid=' + apiKey;
+
+      $.ajax({
+        url: weatherEndpoint,
+        dataType: 'json',
+        success: function(data) {
+          var temperature = data.main.temp - 273.15;
+          var humidity = data.main.humidity;
+          var description = data.weather[0].description;
+
+          var weatherInfo = 'Temperature: ' + temperature.toFixed(2) + '°C<br>';
+          weatherInfo += 'Humidity: ' + humidity + '%<br>';
+          weatherInfo += 'Conditions: ' + description;
+
+          $('#weather-info').html(weatherInfo);
+        },
+        error: function() {
+          $('#weather-info').html('Failed to fetch weather data.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
